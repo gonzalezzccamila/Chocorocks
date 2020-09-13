@@ -103,23 +103,23 @@
  }
  40.01%{
   background-image: url(media/slide3.jpg);
-}
-60%{
- background-image: url(media/slide3.jpg);
-}
-60.01%{
+  }
+  60%{
+  background-image: url(media/slide3.jpg);
+  }
+  60.01%{
+    background-image: url(media/slide4.jpg);
+  }
+  80%{
   background-image: url(media/slide4.jpg);
-}
-80%{
- background-image: url(media/slide4.jpg);
-}
-80.01%{
+  }
+  80.01%{
+    background-image: url(media/slide5.jpg);
+  }
+  100%{
   background-image: url(media/slide5.jpg);
+  }
 }
-100%{
- background-image: url(media/slide5.jpg);
-}
-/*FORMULARIO***********************************/
 
 /***************************MEDIA********************************************************/
 @media (max-width: 940px){
