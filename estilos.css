@@ -55,6 +55,7 @@
   transform: scale(0.8);
   transition: all 0.3s ease;
 }
+/*SLIDER EN BACKGROUND*************/
 .load{
   animation: slide 2s;
 }
@@ -70,11 +71,11 @@
   color: #fff;
   width: 100%;
   height: 100vh;
-    background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
 }
 .principal{
-  left: 550px;
-  top: 300px;
+  left: 80vh;
+  top: 50%;
   transition: translate(-50%,-50%);
   position: absolute;
   letter-spacing: 5px;
@@ -113,13 +114,13 @@
  background-image: url(media/slide4.jpg);
 }
 80.01%{
-  background-image: url(media/slide5.png);
+  background-image: url(media/slide5.jpg);
 }
 100%{
- background-image: url(media/slide5.png);
+ background-image: url(media/slide5.jpg);
 }
+/*FORMULARIO***********************************/
 
-}
 /***************************MEDIA********************************************************/
 @media (max-width: 940px){
   .padreNav .menu-btn i{
