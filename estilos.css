@@ -1,0 +1,95 @@
+*{
+  padding:0;
+  margin: 0;
+}
+.padreNav{
+  height: 80px;
+  background-color: #66b099 ; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
+}
+.padreNav ul{
+  display: flex;
+  list-style: none;
+}
+.padreNav ul li{
+  margin:0 5px;
+}
+.padreNav ul li a{
+  font-family: 'Libre Baskerville', serif;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.padreNav ul li a:hover,
+.padreNav ul li a.active{
+  color: white;
+  background: #1f1f1f;
+}
+.padreNav ul li:hover{
+  -webkit-transform: scale(0.8);  
+  -ms-transform: scale(0.8); 
+  transform: scale(0.8);
+  transition: all 0.3 ease;
+}
+.padreNav .menu-btn i{
+  color: #1f1f1f;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+#click{
+  display: none;
+}
+.logo:hover{
+  -webkit-transform: scale(0.8);  
+  -ms-transform: scale(0.8); 
+  transform: scale(0.8);
+  transition: all 0.3s ease;
+}
+@media (max-width: 940px){
+  .padreNav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  .padreNav img{
+    display: flex;
+    justify-content: center;
+   }
+  .padreNav ul{
+    position: fixed ;
+    top: 80px;
+    left: -100%;
+    background: #1f1f1f;;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align:center;
+    transition: all 0.3s ease
+  }
+  #click:checked ~ ul{
+    left: 0%;
+  }
+  .padreNav ul li{
+    margin: 40px o;
+  }
+  .padreNav ul li a{
+     font-size: 20px;
+     display: block;
+  }
+  .padreNav ul li a:hover,
+  .padreNav ul li a.active{
+  color:#33a396;
+  background: none;
+  }
+  
+}
