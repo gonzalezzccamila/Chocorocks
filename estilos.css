@@ -365,6 +365,89 @@ textarea.formulario__etiquetas {
 
 
 
+/**************GRID*********************************************************/
+
+.containergrid__itemsHref{
+  background: #f7f7f7;
+	display: grid;
+	padding: 100px 100px 100px 100px;
+	grid-template-columns: repeat(4,1fr);
+	grid-column-gap: 10px;
+}
+
+.containergrid__itemsHref .grid__itemsHref {
+	padding: 1em;
+
+}
+.containergrid__itemsHref .grid__itemsHref:hover {
+  opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /***************************MEDIA********************************************************/
 
 @media (max-width: 940px){
