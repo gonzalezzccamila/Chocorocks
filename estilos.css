@@ -177,7 +177,6 @@ main {
     height: 900px;
 }
 .servicios {
-  font-size: 20px;
   font-weight:50px;
   display: grid; 
   grid-template-columns: 1fr 1fr; 
@@ -188,13 +187,23 @@ main {
 }
 .servicios-textos p {
   font-family: 'Quicksand', sans-serif;
+  text-shadow: 0.5px 0.5px 0.5px black;
+  font-size: 22px;
+  font-weight: 500;
   text-align: left;
   padding-bottom: 10px;
 }
 .servicios-textos h2 {
   font-family: 'Libre Baskerville', serif;
-  text-align: left; 
-  padding-bottom: 10px;}
+  padding-bottom: 10px;
+  color: #000;
+  text-align: center;
+  font-weight: lighter;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
 .servicios-img {
   overflow: hidden;
   width: 400px;
@@ -224,7 +233,13 @@ main {
   padding-bottom: 15px;
 }
 
-
+.servicios-textos h2:hover{
+  color: #fff;
+    text-shadow: 0 0 100px #666,                
+    0 0 10px #666,                
+    0 0 10px #666,               
+    0 0 50px #000;
+}
 /*FORMULARIO**********************************************************/
 .formulario {
   background: url(media/form1.jpg) no-repeat center;
@@ -238,7 +253,7 @@ main {
 .formulario__linea {
   width: 100px;
   height: 10px;
-  background: #425460;
+  background: #66b099;
   margin: 10px auto; }
 
 .formulario__contacto {
@@ -269,7 +284,7 @@ textarea.formulario__etiquetas {
 .formulario__boton {
   float: right;
   border: 0;
-  background: #425460;
+  background: #66b099;
   color: black;
   padding: 12px 50px;
   border-radius: 3px;
@@ -277,7 +292,7 @@ textarea.formulario__etiquetas {
   transition: .5s; }
 
 .formulario__boton:hover {
-  background: #491F5B;
+  background: #234a3e;
   color: white; }
 
 /***************************MEDIA********************************************************/
@@ -320,3 +335,16 @@ textarea.formulario__etiquetas {
   background: none;
   }
 }
+
+@media (max-width: 575.98px) {
+	.servicios {display: grid; grid-template-columns: 1fr; grid-gap: 0px; padding-bottom: 0px;}
+	.servicios-textos h2 {text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 50px; }
+	.servicios-textos p {text-align: center; padding-bottom: 50px; padding-left: 20px; padding-right: 20px;}
+	.servicios-tipos {max-width: 300px; margin: auto; display: grid; grid-template-columns: 1fr; grid-gap: 50px;}
+	.servicios-textos button {display: none;}
+
+	.servicios-container {margin-bottom: 0px; padding-bottom: 50px; padding-top: 50px;}
+	.servicios-tipos-columnas {text-align: left; justify-items: center;}
+
+	.servicios-img {overflow: hidden; width: 100vw; height: auto;}
+	.servicios-img img {max-width: 100%; object-fit: cover;}
