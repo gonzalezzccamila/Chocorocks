@@ -128,6 +128,157 @@
   background-image: url(media/slide5.jpg);
   }
 }
+/*SEPARADOR CAKE*****************************************************************/
+.divisorColor{
+  background-color: #e3fff7;
+}
+.h-divider {
+  margin: auto;
+  margin-top: 60px;
+  width: 80%;
+  position: relative;
+}
+.h-divider .shadow {
+  overflow: hidden;
+  height: 20px;
+}
+.h-divider .shadow:after {
+  content: '';
+  display: block;
+  margin: -25px auto 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 125px/12px;
+  box-shadow: 0 0 8px black;
+}
+.h-divider .text2 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -35px;
+  left: 50%;
+  margin-left: -25px;
+  border-radius: 100%;
+  box-shadow: 0 2px 4px #999;
+  background: #f0fffb;
+}
+.h-divider img {
+  position: absolute;
+  margin: 4px;
+  max-width: 60px;
+  border-radius: 100%;
+  border: 1px dashed #aaa;
+}
+/*FONDO MIGAS *********************************************************************/
+main {
+    background-image: url(media/fondomigas.png);
+    width: 100%;
+    height: 900px;
+}
+.servicios {
+  font-size: 20px;
+  font-weight:50px;
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 35px; 
+  padding-bottom: 90px;
+  padding-top: 100px;
+  height: 900px;
+}
+.servicios-textos p {
+  font-family: 'Quicksand', sans-serif;
+  text-align: left;
+  padding-bottom: 10px;
+}
+.servicios-textos h2 {
+  font-family: 'Libre Baskerville', serif;
+  text-align: left; 
+  padding-bottom: 10px;}
+.servicios-img {
+  overflow: hidden;
+  width: 400px;
+  height: 740px;}
+.servicios-img img {
+  max-width: 100%; 
+  object-fit: cover;}
+.servicios-container {
+  background-color: #313C48;
+  padding-bottom: 90px; 
+  padding-top: 90px; 
+  margin-bottom: 90px;
+}
+.servicios-tipos {
+  margin: auto; 
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-gap: 45px;
+}
+.servicios-tipos-columnas {
+  display: grid; 
+  grid-template-rows: auto auto auto; 
+  grid-template-columns: 1fr;
+}
+.servicios-tipos-columnas img {
+  width: 60px; 
+  padding-bottom: 15px;
+}
+
+
+/*FORMULARIO**********************************************************/
+.formulario {
+  background: url(media/form1.jpg) no-repeat center;
+  background-size: cover;
+  padding: 40px; }
+
+.formulario h1 {
+  text-align: center;
+  color: #FFFFFF; }
+
+.formulario__linea {
+  width: 100px;
+  height: 10px;
+  background: #425460;
+  margin: 10px auto; }
+
+.formulario__contacto {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden; }
+
+.formulario__etiquetas {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background-color: #2F2536;
+  padding: 20px 40px;
+  outline: none;
+  color: white;
+  transition: .4s; }
+
+.formulario__etiquetas:focus {
+  box-shadow: 0 0 10px 4px white; }
+
+textarea.formulario__etiquetas {
+  resize: none;
+  height: 120px; }
+
+.formulario__boton {
+  float: right;
+  border: 0;
+  background: #425460;
+  color: black;
+  padding: 12px 50px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .5s; }
+
+.formulario__boton:hover {
+  background: #491F5B;
+  color: white; }
 
 /***************************MEDIA********************************************************/
 
