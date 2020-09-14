@@ -294,6 +294,103 @@ textarea.formulario__etiquetas {
 .formulario__boton:hover {
   background: #234a3e;
   color: white; }
+/****GALERIA LINK**************************************************************************************************/
+
+.contenedor-foto {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; }
+  .contenedor-foto h6 {
+    display: block; }
+  .contenedor-foto a {
+    text-decoration: none;
+    color: #343434;
+    position: absolute;
+    text-align: center;
+    font-family: staatliches;
+    font-weight: normal;
+    font-size: 3rem;
+    color: #343434;
+    font-style: italic;
+    transition: 150ms;
+    opacity: 0;
+    margin: 0px;
+    padding: 160px;
+    background-color: #f3f3f3; }
+    .contenedor-foto a:hover {
+      opacity: .5; }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /***************************MEDIA********************************************************/
 
