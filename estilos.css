@@ -1,6 +1,7 @@
 *{
   padding:0;
   margin: 0;
+  box-sizing: border-box;
 }
 /************************BARRA NAV***********************/
 #padreNav{
@@ -8,6 +9,7 @@
   height: 80px;
   background-color: #66b099 ; 
   display: flex;
+  list-style: none;
   align-items: center;
   justify-content: space-between;
   padding: 0px 50px 0px 100px;
@@ -323,13 +325,15 @@ textarea.formulario__etiquetas {
 .tituloPaginas{
   background: rgb(255,255,255);
 background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(102,176,153,1) 100%);
-  padding-top: 100px;
+  padding-top: 50px;
   width: 100%;
 }
 
 .tituloPaginas h1 {
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Lobster', cursive;
   text-align: center;
+  letter-spacing: 1px;
+  font-size: 45px;
 }
 
 /******************************EXPOSICION DE PRODUCTOS********************************************************************/
@@ -338,25 +342,34 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(102,176,153,1) 10
   background: #ECEBEB; }
 
 .nuestrosProductos__titulo {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  padding-left: 50px;
   margin-bottom: 10px;
+  font-family: 'Gayathri', sans-serif;
+  font-size: 30px;  
+  background-color: white;
   color: #313131;
+  font-weight: 100;
   text-align: center; }
 
 .nuestrosProductos_section {
-  margin-top: 20px;
   max-width: 1200px;
   margin: auto;
   padding: 0 0 10px 10px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px; }
+  grid-gap: 10px; }
 
 .nuestrosProductos_section--items {
   border-radius: 5px;
   overflow: hidden;
   text-align: center;
   box-sizing: border-box;
-  border: 1px solid #ddd; }
+  border: 1px solid #ddd; 
+  padding: 0 0 40px;
+}
 
 .nuestrosProductos_section--img {
   margin-top: 5px;
@@ -374,19 +387,29 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(102,176,153,1) 10
 
 .nuestrosProductos_section--items > .nuestrosProductos_section--titulo {
   font-size: 20px;
+  margin-bottom: 30px;
+  font-family: 'Gayathri', sans-serif;
+  padding-top: 20px;
   font-weight: bold; }
 
-.nuestrosProductos_section--boton {
-  outline: none;
-  background: black;
+  .nuestrosProductos_section--items a{
+  margin-top: 200px;
+  background-color: #2ea882;
+  box-shadow: 0 5px 0 #125b44;
   color: white;
-  padding: 10px 15px;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
   text-transform: uppercase;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 5px;
-  font-size: 16px;
-  margin: 10px 0; }
+}
+
+.nuestrosProductos_section--items a:hover {
+background-color: #125b44;
+cursor: pointer;
+text-decoration: none;
+color: white;
+box-shadow: 0 0 10px 4px gray;
+}
 
 
 
@@ -507,8 +530,6 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(102,176,153,1) 10
 @media (max-width: 940px){
   #padreNav .menu-btn i{
     display: block;
-    position: fixed;
-
   }
   #click:checked ~ .menu-btn i:before{
     content: "\f00d";
@@ -518,6 +539,7 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(102,176,153,1) 10
     justify-content: center;
    }
   #padreNav ul{
+    position: fixed;
     top: 80px;
     left: -100%;
     background: #1f1f1f;;
