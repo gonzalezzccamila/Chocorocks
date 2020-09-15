@@ -3,7 +3,9 @@
   margin: 0;
 }
 /************************BARRA NAV***********************/
-.padreNav{
+#padreNav{
+  position: fixed;
+  width: 100%;
   height: 80px;
   background-color: #66b099 ; 
   display: flex;
@@ -11,20 +13,20 @@
   justify-content: space-between;
   padding: 0px 50px 0px 100px;
 }
-.padreNav .logo a img{
+#padreNav .logo a img{
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
 }
-.padreNav ul{
+#padreNav ul{
   display: flex;
   list-style: none;
   padding: 10px 0 0 0;
 }
-.padreNav ul li{
+#padreNav ul li{
   margin:0 5px;
 }
-.padreNav ul li a{
+#padreNav ul li a{
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -35,18 +37,18 @@
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-.padreNav ul li a:hover,
-.padreNav ul li a.active{
+#padreNav ul li a:hover,
+#padreNav ul li a.active{
   color: white;
   background: #1f1f1f;
 }
-.padreNav ul li:hover{
+#padreNav ul li:hover{
   -webkit-transform: scale(0.8);  
   -ms-transform: scale(0.8); 
   transform: scale(0.8);
   transition: all 0.3 ease;
 }
-.padreNav .menu-btn i{
+#padreNav .menu-btn i{
   color: #1f1f1f;
   font-size: 22px;
   cursor: pointer;
@@ -294,7 +296,7 @@ textarea.formulario__etiquetas {
 .formulario__boton:hover {
   background: #234a3e;
   color: white; }
-/**************GRID*********************************************************/
+/**************GRID DE INICIO A PAGINAS*********************************************************/
 
 .containergrid__itemsHref{
   background: #f7f7f7;
@@ -309,13 +311,113 @@ textarea.formulario__etiquetas {
 
 }
 .containergrid__itemsHref .grid__itemsHref:hover {
-  opacity: 0.5;
+ 
+  -webkit-transform: scale(0.5);  
+  -ms-transform: scale(0.5); 
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+  box-shadow: 10px 15px 7px #C7C7C7;
+
 }
 /*************************************TITULO*/
 .tituloPaginas{
-  background: rgb(102,176,153);
-  background: linear-gradient(0deg, rgba(102,176,153,1) 0%, rgba(255,255,255,1) 100%);  
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(102,176,153,1) 100%);
+  padding-bottom: 100px;
+  padding-top: 100px;
+  width: 100%;
 }
+
+.tituloPaginas h1 {
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+}
+
+/******************************EXPOSICION DE PRODUCTOS********************************************************************/
+
+.nuestrosProductos {
+  background: #ECEBEB; }
+
+.nuestrosProductos__titulo {
+  margin-bottom: 10px;
+  color: #313131;
+  text-align: center; }
+
+.nuestrosProductos_section {
+  margin-top: 20px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 0 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 5px; }
+
+.nuestrosProductos_section--items {
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #ddd; }
+
+.nuestrosProductos_section--img {
+  margin-top: 5px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  opacity: 0.9;
+  transition: 0.3s ease;
+  cursor: pointer; }
+
+.nuestrosProductos_section--img:hover {
+  opacity: 1;
+  transform: scale(1.5, 1.5); }
+
+.nuestrosProductos_section--items > .nuestrosProductos_section--titulo {
+  font-size: 20px;
+  font-weight: bold; }
+
+.nuestrosProductos_section--boton {
+  outline: none;
+  background: black;
+  color: white;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 10px 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********************************visitanuestraspaginas************/
 .visita{
   background: #f7f7f7;
 
@@ -344,7 +446,7 @@ textarea.formulario__etiquetas {
 
 
 
-
+/***********************************************************/
 
 
 
@@ -404,17 +506,17 @@ textarea.formulario__etiquetas {
 /***************************MEDIA********************************************************/
 
 @media (max-width: 940px){
-  .padreNav .menu-btn i{
+  #padreNav .menu-btn i{
     display: block;
   }
   #click:checked ~ .menu-btn i:before{
     content: "\f00d";
   }
-  .padreNav img{
+  #padreNav img{
     display: flex;
     justify-content: center;
    }
-  .padreNav ul{
+  #padreNav ul{
     position: fixed ;
     top: 80px;
     left: -100%;
@@ -428,15 +530,15 @@ textarea.formulario__etiquetas {
   #click:checked ~ ul{
     left: 0%;
   }
-  .padreNav ul li{
+  #padreNav ul li{
     margin: 40px o;
   }
-  .padreNav ul li a{
+  #padreNav ul li a{
      font-size: 20px;
      display: block;
   }
-  .padreNav ul li a:hover,
-  .padreNav ul li a.active{
+  #padreNav ul li a:hover,
+  #padreNav ul li a.active{
   color:#33a396;
   background: none;
   }
