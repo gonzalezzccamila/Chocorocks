@@ -299,7 +299,7 @@ textarea.formulario__etiquetas {
 .containergrid__itemsHref{
   background: #f7f7f7;
 	display: grid;
-	padding: 100px 100px 100px 100px;
+	padding: 70px 100px 100px 100px;
 	grid-template-columns: repeat(4,1fr);
 	grid-column-gap: 10px;
 }
@@ -311,13 +311,36 @@ textarea.formulario__etiquetas {
 .containergrid__itemsHref .grid__itemsHref:hover {
   opacity: 0.5;
 }
+/*************************************TITULO*/
+.tituloPaginas{
+  background: rgb(102,176,153);
+  background: linear-gradient(0deg, rgba(102,176,153,1) 0%, rgba(255,255,255,1) 100%);  
+}
+.visita{
+  background: #f7f7f7;
 
+}
+.visita h1{
+  background: #f7f7f7;
+  font-family: 'DM Serif Display', serif;
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom:0;
+}
+/********************************************lineaaaaa******************/
+.linea {
+  background: #f7f7f7;
+  border-top: 3px solid rgb(102,176,153);
+  height: 2px;
+  max-width: 200px;
+  padding: 0;
+  margin: 50px auto 0 auto;
+}
+.centrado{
+  background: #f7f7f7;
 
-background: rgb(102,176,153);
-background: linear-gradient(0deg, rgba(102,176,153,1) 0%, rgba(255,255,255,1) 100%);
-
-
-
+	text-align: center;
+}
 
 
 
