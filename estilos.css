@@ -415,32 +415,68 @@ box-shadow: 0 0 10px 4px gray;
 
 /****************FOOOOOOOOOOOOOOOTEEEEEEEEEEEERR********************************************************************/
 
-.footer{
-  width: 100vw;
-  display: block;
-  overflow: hidden;
-  padding: 100px 0;
-  box-sizing: border-box;
-  background-color: #18181a;
+.footer {
+  background-color: #092a33;
+  display: flex;
+  font-size: 15px;
+  justify-content: center;
+  padding: 1rem 0;
 }
-.inner_footer{
-  display: block;
-  margin: 0 auto;
-  width: 1100px;
-  height: 100% ;
+  .footer a {
+      color: #fff;
+      text-decoration: none;
+  }
+  .footer a:hover {
+      color: white;
+  }
+  #footer__lifestream {
+      display: flex;
+      justify-content: center;
+      margin: 1rem 0;
+  }
+      #footer__lifestream li {
+          margin: 0 1rem;
+      }
+  #footer__menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 1rem 0;
+  }
+      .footer__menu__option {
+          margin: 0 0 0 1rem;
+      }
+  .footer__copyright {
+      margin: 0 1rem;
+      text-align: center;
+  }
+.fa:hover{
+  text-shadow: 0 0 100px #666,                
+  0 0 10px #666,                
+  0 0 10px #666,               
+  0 0 50px #000;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+  .photo-profile {
+    background-color: #092a33;
+    -webkit-border-radius: 50%;
+    -moz-border-radius   : 50%;
+    border-radius        : 50%;
+    height: 13rem;
+    margin: -3.5rem 0 0 0;
+    padding: .5rem;
+    width: 13rem;
+}
+.photo-profile:hover{
+  
+  -webkit-transform: scale(0.5);  
+  -ms-transform: scale(0.5); 
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+.photo-profile-holder {
+    background-color: #092a33;
+    text-align: center;
+}
 
 
 
